@@ -1,5 +1,4 @@
-# Dodatok-k-DP
-Dodatok k práci Detekcia malvéru pomocou LLM
+# Dodatok k práci Detekcia malvéru pomocou LLM
 
 1. **Inštalačná príručka**
 
