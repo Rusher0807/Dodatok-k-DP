@@ -1,0 +1,108 @@
+598: entry0 ()
+afv: vars(11:sp[0x10..0xd0])
+0x1400edbc0 sub rsp, 0x28
+0x1400edbc4 call fcn.1400ee3c4
+0x1400edbc9 add rsp, 0x28
+0x1400edbcd jmp 0x1400ed940
+0x1400edbd2 int3
+0x1400edbd3 int3
+0x1400edbd4 int3
+0x1400edbd5 int3
+0x1400edbd6 int3
+0x1400edbd7 int3
+0x1400edbd8 int3
+0x1400edbd9 int3
+0x1400edbda int3
+0x1400edbdb int3
+0x1400edbdc int3
+0x1400edbdd int3
+0x1400edbde int3
+0x1400edbdf int3
+0x1400edbe0 int3
+0x1400edbe1 int3
+0x1400edbe2 int3
+0x1400edbe3 int3
+0x1400edbe4 int3
+0x1400edbe5 int3
+0x1400edbe6      66660f1f84..   nop word [rax + rax]
+399: fcn.1400edbf0 (uint32_t arg1)
+args(rcx) vars(10:sp[0x20..0x90])
+0x1400edbf0      483b0d1974..   cmp rcx, qword [0x140115010]
+0x1400edbf7 jne 0x1400edc09
+0x1400edbf9 rol rcx, 0x10
+0x1400edbfd test cx, 0xffff
+0x1400edc02 jne 0x1400edc05
+0x1400edc04 ret
+0x1400edc05 ror rcx, 0x10
+0x1400edc09 jmp 0x1400edd80
+0x1400edc0e int3
+0x1400edc0f int3
+0x1400edc10 int3
+0x1400edc11 int3
+0x1400edc12 int3
+0x1400edc13 int3
+106: fcn.1400edc14 (VARIANTARG *arg1, int64_t arg2, int64_t arg3, int64_t arg4)
+args(rcx, rdx, r8, r9) vars(3:sp[0x10..0x60])
+0x1400edc14 mov rax, rsp
+0x1400edc17 mov qword [rax + 0x20], r9
+0x1400edc1b mov dword [rax + 0x18], r8d
+0x1400edc1f mov qword [rax + 0x10], rdx
+0x1400edc23 push rbx
+0x1400edc24 push rsi
+0x1400edc25 push rdi
+0x1400edc26 push r14
+0x1400edc28 sub rsp, 0x38
+0x1400edc2c mov r14, r9
+0x1400edc2f movsxd rbx, r8d
+0x1400edc32 mov rsi, rdx
+0x1400edc35 and dword [rax - 0x38], 0
+0x1400edc39 mov rdi, rbx
+0x1400edc3c imul rdi, rdx
+0x1400edc40 add rdi, rcx
+0x1400edc43 mov qword [rax + 8], rdi
+0x1400edc47 sub ebx, 1
+0x1400edc4a mov dword [var_70h], ebx
+0x1400edc4e js 0x1400edc6c
+0x1400edc50 sub rdi, rsi
+0x1400edc53 mov qword [var_60h], rdi
+0x1400edc58 mov rcx, r14
+0x1400edc5b      488b050653..   mov rax, qword [0x1400f2f68]
+0x1400edc62 call rax
+0x1400edc64 mov rcx, rdi
+0x1400edc67 call r14
+0x1400edc6a jmp 0x1400edc47
+0x1400edc6c      c744242001..   mov dword [var_20h], 1
+0x1400edc74 add rsp, 0x38
+0x1400edc78 pop r14
+0x1400edc7a pop rdi
+0x1400edc7b pop rsi
+0x1400edc7c pop rbx
+0x1400edc7d ret
+0x1400edc7e int3
+0x1400edc7f int3
+0x1400edc80 int3
+0x1400edc81 int3
+0x1400edc82 int3
+0x1400edc83 int3
+84: fcn.1400edc84 (int64_t arg1, int64_t arg2, int64_t arg3, int64_t arg4)
+args(rcx, rdx, r8, r9) vars(3:sp[0x10..0x20])
+0x1400edc84 mov qword [var_10h], rbx
+0x1400edc89 mov dword [var_18h], r8d
+0x1400edc8e mov qword [var_8h], rcx
+0x1400edc93 push rsi
+0x1400edc94 push rdi
+0x1400edc95 push r14
+0x1400edc97 sub rsp, 0x40
+0x1400edc9b mov rsi, r9
+0x1400edc9e mov ebx, r8d
+0x1400edca1 mov r14, rdx
+0x1400edca4 mov rdi, rcx
+0x1400edca7 sub ebx, 1
+0x1400edcaa mov dword [var_18h], ebx
+0x1400edcae js 0x1400edcc8
+0x1400edcb0 sub rdi, r14
+0x1400edcb3 mov qword [var_8h], rdi
+0x1400edcb8 mov rcx, rsi
+0x1400edcbb call qword [fcn.140005060]
+0x1400edcc1 mov rcx, rdi
+0x1400edcc4 call rsi

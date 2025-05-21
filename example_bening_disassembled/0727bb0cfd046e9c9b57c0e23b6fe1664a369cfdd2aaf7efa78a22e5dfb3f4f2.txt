@@ -1,0 +1,101 @@
+34: entry0 ()
+0x004014d0 sub rsp, 0x28
+0x004014d4      488b05f544..   mov rax, qword [0x004059d0]
+0x004014db mov dword [rax], 1
+0x004014e1 call fcn.00401e70
+0x004014e6 call fcn.004011b0
+0x004014eb nop
+0x004014ec nop
+0x004014ed add rsp, 0x28
+0x004014f1 ret
+0x004014f2 nop dword [rax]
+0x004014f6      662e0f1f84..   nop word cs:[rax + rax]
+0x00401500 sub rsp, 0x28
+0x00401504      488b05c544..   mov rax, qword [0x004059d0]
+0x0040150b mov dword [rax], 0
+0x00401511 call fcn.00401e70
+0x00401516 call fcn.004011b0
+0x0040151b nop
+0x0040151c nop
+0x0040151d add rsp, 0x28
+0x00401521 ret
+0x00401522 nop
+0x00401523 nop
+0x00401524 nop
+0x00401525 nop
+0x00401526 nop
+0x00401527 nop
+0x00401528 nop
+0x00401529 nop
+0x0040152a nop
+0x0040152b nop
+0x0040152c nop
+0x0040152d nop
+0x0040152e nop
+0x0040152f nop
+0x00401530 push rbp
+0x00401531 mov rbp, rsp
+0x00401534 pop rbp
+0x00401535 ret
+0x00401536      662e0f1f84..   nop word cs:[rax + rax]
+0x00401540 push rbp
+0x00401541 mov rbp, rsp
+0x00401544 sub rsp, 0x20
+0x00401548      48833d402b..   cmp qword [0x00404090], 0
+0x00401550 je 0x401582
+0x00401552      488d0da73a..   lea rcx, str.libgcj_16.dll
+0x00401559 call qword [sym.imp.KERNEL32.dll_GetModuleHandleA]
+0x0040155f test rax, rax
+0x00401562 je 0x401593
+0x00401564      488d15a33a..   lea rdx, str._Jv_RegisterClasses
+0x0040156b mov rcx, rax
+0x0040156e call qword [sym.imp.KERNEL32.dll_GetProcAddress]
+0x00401574 test rax, rax
+0x00401577 je 0x401582
+0x00401579      488d0d102b..   lea rcx, [0x00404090]
+0x00401580 call rax
+0x00401582      488d0d1700..   lea rcx, [0x004015a0]
+0x00401589 add rsp, 0x20
+0x0040158d pop rbp
+0x0040158e jmp 0x401d70
+0x00401593      488d0596ff..   lea rax, [0x00401530]
+0x0040159a jmp 0x401579
+0x0040159c nop dword [rax]
+0x004015a0 push rbp
+0x004015a1 mov rbp, rsp
+0x004015a4 pop rbp
+0x004015a5 ret
+0x004015a6 nop
+0x004015a7 nop
+0x004015a8 nop
+0x004015a9 nop
+0x004015aa nop
+0x004015ab nop
+0x004015ac nop
+0x004015ad nop
+0x004015ae nop
+0x004015af nop
+0x004015b0 mov r10d, dword [r9 + 8]
+0x004015b4 test r10d, r10d
+0x004015b7 je 0x401690
+0x004015bd movzx eax, byte [rcx]
+0x004015c0 pxor xmm1, xmm1
+0x004015c4 pxor xmm0, xmm0
+0x004015c8 cvtsi2sd xmm1, eax
+0x004015cc movzx eax, byte [rcx + 1]
+0x004015d0      f20f590d88..   mulsd xmm1, qword [0x00405560]
+0x004015d8 cvtsi2sd xmm0, eax
+0x004015dc movzx eax, byte [rcx + 2]
+0x004015e0      f20f590580..   mulsd xmm0, qword [0x00405568]
+0x004015e8 addsd xmm1, xmm0
+0x004015ec pxor xmm0, xmm0
+0x004015f0 cvtsi2sd xmm0, eax
+0x004015f4      f20f590574..   mulsd xmm0, qword [0x00405570]
+0x004015fc addsd xmm0, xmm1
+0x00401600      f20f580570..   addsd xmm0, qword [0x00405578]
+0x00401608 cvttsd2si r10d, xmm0
+0x0040160d mov eax, dword [r9 + 0xc]
+0x00401611 imul r10d, r8d
+0x00401615 movsxd r10, r10d
+0x00401618 add r10, qword [r9]
+0x0040161b test eax, eax

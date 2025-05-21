@@ -1,0 +1,7 @@
+16: entry0 ()
+0x0007843e mov edi, edi
+0x00078440 push ebp
+0x00078441 mov ebp, esp
+0x00078443 call fcn.00078405
+0x00078448 pop ebp
+0x00078449 jmp fcn.0001906c

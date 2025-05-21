@@ -1,0 +1,134 @@
+423: entry0 ()
+afv: vars(10:sp[0xc..0x84])
+0x00411c31 push 0x60
+0x00411c33 push 0x467d58
+0x00411c38 call fcn.00413068
+0x00411c3d mov edi, 0x94
+0x00411c42 mov eax, edi
+0x00411c44 call fcn.004130c0
+0x00411c49 mov dword [var_18h], esp
+0x00411c4c mov esi, esp
+0x00411c4e mov dword [esi], edi
+0x00411c50 push esi
+0x00411c51 call dword [sym.imp.KERNEL32.dll_GetVersionExA]
+0x00411c57 mov ecx, dword [esi + 0x10]
+0x00411c5a mov dword [0x4729b0], ecx
+0x00411c60 mov eax, dword [esi + 4]
+0x00411c63 mov dword [0x4729bc], eax
+0x00411c68 mov edx, dword [esi + 8]
+0x00411c6b mov dword [0x4729c0], edx
+0x00411c71 mov esi, dword [esi + 0xc]
+0x00411c74 and esi, 0x7fff
+0x00411c7a mov dword [0x4729b4], esi
+0x00411c80 cmp ecx, 2
+0x00411c83 je 0x411c91
+0x00411c85 or esi, 0x8000
+0x00411c8b mov dword [0x4729b4], esi
+0x00411c91 shl eax, 8
+0x00411c94 add eax, edx
+0x00411c96 mov dword [0x4729b8], eax
+0x00411c9b xor esi, esi
+0x00411c9d push esi
+0x00411c9e mov edi, dword [sym.imp.KERNEL32.dll_GetModuleHandleA]
+0x00411ca4 call edi
+0x00411ca6 cmp word [eax], 0x5a4d
+0x00411cab jne 0x411ccc
+0x00411cad mov ecx, dword [eax + 0x3c]
+0x00411cb0 add ecx, eax
+0x00411cb2 cmp dword [ecx], 0x4550
+0x00411cb8 jne 0x411ccc
+0x00411cba movzx eax, word [ecx + 0x18]
+0x00411cbe cmp eax, 0x10b
+0x00411cc3 je 0x411ce4
+0x00411cc5 cmp eax, 0x20b
+0x00411cca je 0x411cd1
+0x00411ccc mov dword [var_1ch], esi
+0x00411ccf jmp 0x411cf8
+0x00411cd1      83b9840000..   cmp dword [ecx + 0x84], 0xe
+0x00411cd8 jbe 0x411ccc
+0x00411cda xor eax, eax
+0x00411cdc cmp dword [ecx + 0xf8], esi
+0x00411ce2 jmp 0x411cf2
+0x00411ce4 cmp dword [ecx + 0x74], 0xe
+0x00411ce8 jbe 0x411ccc
+0x00411cea xor eax, eax
+0x00411cec cmp dword [ecx + 0xe8], esi
+0x00411cf2 setne al
+0x00411cf5 mov dword [var_1ch], eax
+0x00411cf8 push 1
+0x00411cfa call fcn.00413016
+0x00411cff pop ecx
+0x00411d00 test eax, eax
+0x00411d02 jne 0x411d0c
+0x00411d04 push 0x1c
+0x00411d06 call fcn.00411c0d
+0x00411d0b pop ecx
+0x00411d0c call fcn.00412f8d
+0x00411d11 test eax, eax
+0x00411d13 jne 0x411d1d
+0x00411d15 push 0x10
+0x00411d17 call fcn.00411c0d
+0x00411d1c pop ecx
+0x00411d1d call fcn.00412e76
+0x00411d22 mov dword [var_4h], esi
+0x00411d25 call fcn.00412c78
+0x00411d2a test eax, eax
+0x00411d2c jge 0x411d36
+0x00411d2e push 0x1b
+0x00411d30 call fcn.00411be8
+0x00411d35 pop ecx
+0x00411d36 call dword [sym.imp.KERNEL32.dll_GetCommandLineA]
+0x00411d3c mov dword [0x473190], eax
+0x00411d41 call fcn.00412b56
+0x00411d46 mov dword [0x4729a0], eax
+0x00411d4b call fcn.00412ab4
+0x00411d50 test eax, eax
+0x00411d52 jge 0x411d5c
+0x00411d54 push 8
+0x00411d56 call fcn.00411be8
+0x00411d5b pop ecx
+0x00411d5c call fcn.00412881
+0x00411d61 test eax, eax
+0x00411d63 jge 0x411d6d
+0x00411d65 push 9
+0x00411d67 call fcn.00411be8
+0x00411d6c pop ecx
+0x00411d6d call fcn.0041238c
+0x00411d72 mov dword [var_20h], eax
+0x00411d75 cmp eax, esi
+0x00411d77 je 0x411d80
+0x00411d79 push eax
+0x00411d7a call fcn.00411be8
+0x00411d7f pop ecx
+0x00411d80 mov dword [var_38h], esi
+0x00411d83 lea eax, [lpStartupInfo]
+0x00411d86 push eax
+0x00411d87 call dword [sym.imp.KERNEL32.dll_GetStartupInfoA]
+0x00411d8d call fcn.00412818
+0x00411d92 mov dword [var_68h], eax
+0x00411d95 test byte [var_38h], 1
+0x00411d99 je 0x411da1
+0x00411d9b movzx eax, word [var_34h]
+0x00411d9f jmp 0x411da4
+0x00411da1 push 0xa
+0x00411da3 pop eax
+0x00411da4 push eax
+0x00411da5 push dword [var_68h]
+0x00411da8 push esi
+0x00411da9 push esi
+0x00411daa call edi
+0x00411dac push eax
+0x00411dad call fcn.00411537
+0x00411db2 mov edi, eax
+0x00411db4 mov dword [var_6ch], edi
+0x00411db7 cmp dword [var_1ch], esi
+0x00411dba jne 0x411dc2
+0x00411dbc push edi
+0x00411dbd call fcn.004124c4
+0x00411dc2 call fcn.004124e6
+0x00411dc7 jmp 0x411df4
+0x00411df4 or dword [var_4h], 0xffffffff
+0x00411df8 mov eax, edi
+0x00411dfa lea esp, [var_7ch]
+0x00411dfd call fcn.004130a3
+0x00411e02 ret

@@ -1,0 +1,22 @@
+133: entry0 ()
+0x00401454 pushal
+0x00401455 xor edx, edx
+0x00401457 add edx, 0x471200
+0x0040145d dec dh
+0x0040145f push edx
+0x00401460 lea eax, [edx + 0xa]
+0x00401463 add byte [eax], 4
+0x00401466 push edx
+0x00401467 mov eax, dword [sym.imp.KERNEL32.dll_GetModuleHandleW]
+0x0040146c dec eax
+0x0040146d call eax
+0x0040146f mov ecx, eax
+0x00401471 add cl, 0x3c
+0x00401474 mov ecx, dword [ecx]
+0x00401476 push dword [eax + ecx + 0x1c]
+0x0040147a ror dword [esp], 0xc
+0x0040147e pop eax
+0x0040147f sub al, 0x28
+0x00401481 pop eax
+0x00401482 jg 0x4010c8
+0x00401488 jmp 0x401114

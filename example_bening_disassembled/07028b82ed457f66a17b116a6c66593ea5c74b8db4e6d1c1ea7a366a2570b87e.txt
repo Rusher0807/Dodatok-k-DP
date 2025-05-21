@@ -1,0 +1,103 @@
+34: entry0 ()
+0x004014d0 sub rsp, 0x28
+0x004014d4      488b05d554..   mov rax, qword [0x004069b0]
+0x004014db mov dword [rax], 1
+0x004014e1 call fcn.004034b0
+0x004014e6 call fcn.004011b0
+0x004014eb nop
+0x004014ec nop
+0x004014ed add rsp, 0x28
+0x004014f1 ret
+0x004014f2 nop dword [rax]
+0x004014f6      662e0f1f84..   nop word cs:[rax + rax]
+0x00401500 sub rsp, 0x28
+0x00401504      488b05a554..   mov rax, qword [0x004069b0]
+0x0040150b mov dword [rax], 0
+0x00401511 call fcn.004034b0
+0x00401516 call fcn.004011b0
+0x0040151b nop
+0x0040151c nop
+0x0040151d add rsp, 0x28
+0x00401521 ret
+0x00401522 nop
+0x00401523 nop
+0x00401524 nop
+0x00401525 nop
+0x00401526 nop
+0x00401527 nop
+0x00401528 nop
+0x00401529 nop
+0x0040152a nop
+0x0040152b nop
+0x0040152c nop
+0x0040152d nop
+0x0040152e nop
+0x0040152f nop
+0x00401530 push rbp
+0x00401531 mov rbp, rsp
+0x00401534 pop rbp
+0x00401535 ret
+0x00401536      662e0f1f84..   nop word cs:[rax + rax]
+0x00401540 push rbp
+0x00401541 mov rbp, rsp
+0x00401544 sub rsp, 0x20
+0x00401548      48833d803b..   cmp qword [0x004050d0], 0
+0x00401550 je 0x401582
+0x00401552      488d0da74a..   lea rcx, str.libgcj_16.dll
+0x00401559 call qword [sym.imp.KERNEL32.dll_GetModuleHandleA]
+0x0040155f test rax, rax
+0x00401562 je 0x401593
+0x00401564      488d15a34a..   lea rdx, str._Jv_RegisterClasses
+0x0040156b mov rcx, rax
+0x0040156e call qword [sym.imp.KERNEL32.dll_GetProcAddress]
+0x00401574 test rax, rax
+0x00401577 je 0x401582
+0x00401579      488d0d503b..   lea rcx, [0x004050d0]
+0x00401580 call rax
+0x00401582      488d0d1700..   lea rcx, [0x004015a0]
+0x00401589 add rsp, 0x20
+0x0040158d pop rbp
+0x0040158e jmp 0x4033b0
+0x00401593      488d0596ff..   lea rax, [0x00401530]
+0x0040159a jmp 0x401579
+0x0040159c nop dword [rax]
+0x004015a0 push rbp
+0x004015a1 mov rbp, rsp
+0x004015a4 pop rbp
+0x004015a5 ret
+0x004015a6 nop
+0x004015a7 nop
+0x004015a8 nop
+0x004015a9 nop
+0x004015aa nop
+0x004015ab nop
+0x004015ac nop
+0x004015ad nop
+0x004015ae nop
+0x004015af nop
+981: fcn.004015b0 (int64_t arg1, int64_t arg2, int64_t arg3, int64_t arg4, signed int arg_80h, int64_t arg_88h)
+args(rcx, rdx, r8, r9, sp[0x0..0x8]) vars(3:sp[0x10..0x7c])
+0x004015b0 push r15
+0x004015b2 push r14
+0x004015b4 push r13
+0x004015b6 push r12
+0x004015b8 push rbp
+0x004015b9 push rdi
+0x004015ba push rsi
+0x004015bb push rbx
+0x004015bc sub rsp, 0x18
+0x004015c0      8bb4248800..   mov esi, dword [arg_88h]
+0x004015c7 mov eax, edx
+0x004015c9 mov qword [var_70h], r8
+0x004015ce shr eax, 0x1f
+0x004015d1 add eax, edx
+0x004015d3 sar eax, 1
+0x004015d5      3b94248000..   cmp edx, dword [arg_80h]
+0x004015dc mov dword [var_4h], eax
+0x004015e0 jg 0x40187e
+0x004015e6 xor r13d, r13d
+0x004015e9 test eax, eax
+0x004015eb jle 0x4016db
+0x004015f1 movsxd r14, dword [var_4h]
+0x004015f6 lea eax, [rsi - 1]
+0x004015f9 movsxd rbx, esi

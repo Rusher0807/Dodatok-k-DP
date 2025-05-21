@@ -1,0 +1,11 @@
+33: entry0 (int32_t arg_4h, uint32_t arg_8h, int32_t arg_10h)
+args(sp[0x0..0xc])
+0x64012faa cmp dword [arg_8h], 1
+0x64012faf jne 0x64012fb6
+0x64012fb1 call fcn.64018806
+0x64012fb6 push dword [arg_4h]
+0x64012fba mov ecx, dword [arg_10h]
+0x64012fbe mov edx, dword [arg_8h]
+0x64012fc2 call fcn.64012eb4
+0x64012fc7 pop ecx
+0x64012fc8 ret 0xc

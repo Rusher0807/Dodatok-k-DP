@@ -1,0 +1,105 @@
+34: entry0 ()
+0x00401500 sub rsp, 0x28
+0x00401504      488b05d57c..   mov rax, qword [0x004191e0]
+0x0040150b mov dword [rax], 0
+0x00401511 call fcn.004083c0
+0x00401516 call fcn.004011b0
+0x0040151b nop
+0x0040151c nop
+0x0040151d add rsp, 0x28
+0x00401521 ret
+0x00401522 nop
+0x00401523 nop
+0x00401524 nop
+0x00401525 nop
+0x00401526 nop
+0x00401527 nop
+0x00401528 nop
+0x00401529 nop
+0x0040152a nop
+0x0040152b nop
+0x0040152c nop
+0x0040152d nop
+0x0040152e nop
+0x0040152f nop
+69: fcn.00401530 (int64_t arg1, char *name, int64_t arg3)
+args(rcx, rdx, r8) vars(1:sp[0x41..0x41])
+0x00401530 push rsi
+0x00401531 push rbx
+0x00401532 sub rsp, 0x38
+0x00401536 mov rbx, rcx
+0x00401539 mov rcx, rdx
+0x0040153c mov rsi, r8
+0x0040153f call sub.msvcrt.dll_getenv
+0x00401544 test rax, rax
+0x00401547 je 0x40154e
+0x00401549 cmp byte [rax], 0
+0x0040154c jne 0x401563
+0x0040154e mov rdx, rsi
+0x00401551 mov rcx, rbx
+0x00401554 call fcn.00408128
+0x00401559 mov rax, rbx
+0x0040155c add rsp, 0x38
+0x00401560 pop rbx
+0x00401561 pop rsi
+0x00401562 ret
+0x00401563 lea r8, [var_2fh]
+0x00401568 mov rdx, rax
+0x0040156b mov rcx, rbx
+0x0040156e call fcn.00408138
+0x00401573 jmp 0x401559
+0x00401575 nop
+0x00401576      662e0f1f84..   nop word cs:[rax + rax]
+0x00401580      488b0db9ba..   mov rcx, qword [0x0041d040]
+0x00401587 test rcx, rcx
+0x0040158a je 0x401591
+0x0040158c jmp sub.libstdc_6.dll_operator_delete_void_
+0x00401591 repz ret
+0x00401593 nop dword [rax]
+0x00401596      662e0f1f84..   nop word cs:[rax + rax]
+574: fcn.004015a0 (int64_t arg1)
+args(rcx) vars(9:sp[0x6c..0x1c2])
+0x004015a0 push r14
+0x004015a2 push r13
+0x004015a4 push r12
+0x004015a6 push rbp
+0x004015a7 push rdi
+0x004015a8 push rsi
+0x004015a9 push rbx
+0x004015aa      4881ec9001..   sub rsp, 0x190
+0x004015b1      488d15494a..   lea rdx, str.OCTAVE_HOME
+0x004015b8 lea r12, [var_50h]
+0x004015bd      488d9c2480..   lea rbx, [name]
+0x004015c5 mov rdi, rcx
+0x004015c8 lea rsi, [var_70h]
+0x004015cd lea rbp, [var_30h]
+0x004015d2 mov r8, r12
+0x004015d5 mov rcx, rbx
+0x004015d8 call fcn.00408138
+0x004015dd      488b8c2480..   mov rcx, qword [name]
+0x004015e5 call sub.msvcrt.dll_getenv
+0x004015ea      4c8d0d0f4a..   lea r9, section..rdata
+0x004015f1 test rax, rax
+0x004015f4 mov r8, rsi
+0x004015f7 mov rcx, rbp
+0x004015fa mov rdx, r9
+0x004015fd cmovne rdx, rax
+0x00401601 call fcn.00408138
+0x00401606      488b842480..   mov rax, qword [name]
+0x0040160e mov rdx, rsi
+0x00401611 lea rcx, [rax - 0x18]
+0x00401615 call fcn.00408188
+0x0040161a mov rax, qword [var_30h]
+0x0040161f cmp qword [rax - 0x18], 0
+0x00401624 je 0x401657
+0x00401626 mov rdx, rbp
+0x00401629 mov rcx, rdi
+0x0040162c call fcn.00408128
+0x00401631 mov rax, qword [var_30h]
+0x00401636 mov rdx, rbx
+0x00401639 lea rcx, [rax - 0x18]
+0x0040163d call fcn.00408188
+0x00401642 mov rax, rdi
+0x00401645      4881c49001..   add rsp, 0x190
+0x0040164c pop rbx
+0x0040164d pop rsi

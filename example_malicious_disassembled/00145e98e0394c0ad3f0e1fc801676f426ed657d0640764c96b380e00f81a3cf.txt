@@ -1,0 +1,77 @@
+235: entry0 ()
+afv: vars(9:sp[0x7c..0xe0])
+0x004018d3 push ebp
+0x004018d4 mov ebp, esp
+0x004018d6 push 0xffffffffffffffff
+0x004018d8 push 0x423598
+0x004018dd push 0x4028ec
+0x004018e2 mov eax, dword fs:[0]
+0x004018e8 push eax
+0x004018e9      6489250000..   mov dword fs:[0], esp
+0x004018f0 sub esp, 0x58
+0x004018f3 push ebx
+0x004018f4 push esi
+0x004018f5 push edi
+0x004018f6 mov dword [var_18h], esp
+0x004018f9 call dword [sym.imp.KERNEL32.dll_GetVersion]
+0x004018ff xor edx, edx
+0x00401901 mov dl, ah
+0x00401903 mov dword [0x427ccc], edx
+0x00401909 mov ecx, eax
+0x0040190b and ecx, 0xff
+0x00401911 mov dword [0x427cc8], ecx
+0x00401917 shl ecx, 8
+0x0040191a add ecx, edx
+0x0040191c mov dword [0x427cc4], ecx
+0x00401922 shr eax, 0x10
+0x00401925 mov dword [0x427cc0], eax
+0x0040192a xor esi, esi
+0x0040192c push esi
+0x0040192d call fcn.004027b6
+0x00401932 pop ecx
+0x00401933 test eax, eax
+0x00401935 jne 0x40193f
+0x00401937 push 0x1c
+0x00401939 call fcn.004019ee
+0x0040193e pop ecx
+0x0040193f mov dword [var_4h], esi
+0x00401942 call fcn.0040260b
+0x00401947 call dword [sym.imp.KERNEL32.dll_GetCommandLineA]
+0x0040194d mov dword [0x4281f4], eax
+0x00401952 call fcn.004024d9
+0x00401957 mov dword [0x427c98], eax
+0x0040195c call fcn.0040228c
+0x00401961 call fcn.004021d3
+0x00401966 call fcn.00401ef5
+0x0040196b mov dword [var_30h], esi
+0x0040196e lea eax, [lpStartupInfo]
+0x00401971 push eax
+0x00401972 call dword [sym.imp.KERNEL32.dll_GetStartupInfoA]
+0x00401978 call fcn.0040217b
+0x0040197d mov dword [var_64h], eax
+0x00401980 test byte [var_30h], 1
+0x00401984 je 0x40198c
+0x00401986 movzx eax, word [var_2ch]
+0x0040198a jmp 0x40198f
+0x0040198c push 0xa
+0x0040198e pop eax
+0x0040198f push eax
+0x00401990 push dword [var_64h]
+0x00401993 push esi
+0x00401994 push esi
+0x00401995 call dword [sym.imp.KERNEL32.dll_GetModuleHandleA]
+0x0040199b push eax
+0x0040199c call main
+0x004019a1 mov dword [var_60h], eax
+0x004019a4 push eax
+0x004019a5 call fcn.00401f22
+0x004019aa mov eax, dword [var_14h]
+0x004019ad mov ecx, dword [eax]
+0x004019af mov ecx, dword [ecx]
+0x004019b1 mov dword [var_68h], ecx
+0x004019b4 push eax
+0x004019b5 push ecx
+0x004019b6 call fcn.00401ff7
+0x004019bb pop ecx
+0x004019bc pop ecx
+0x004019bd ret

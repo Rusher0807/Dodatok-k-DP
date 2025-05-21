@@ -1,0 +1,33 @@
+165: entry0 ()
+0x00401624 mov eax, sym.imp.KERNEL32.dll_GetACP
+0x00401629 dec dword [eax]
+0x0040162b call dword [eax]
+0x0040162d push 0
+0x0040162f mov eax, dword [sym.imp.USER32.dll_IsIconic]
+0x00401634 call eax
+0x00401636 xor edx, edx
+0x00401638 xor edx, 0x46d200
+0x0040163e dec dh
+0x00401640 push edx
+0x00401641 lea eax, [edx + 8]
+0x00401644 sub byte [eax], 0x50
+0x00401647 push edx
+0x00401648 mov eax, sym.imp.KERNEL32.dll_GetModuleHandleW
+0x0040164d add dword [eax], 0xffffffff
+0x00401650 call dword [sym.imp.KERNEL32.dll_GetModuleHandleW]
+0x00401656 mov ecx, eax
+0x00401658 stc
+0x00401659 adc al, 0x3b
+0x0040165b add ecx, dword [eax]
+0x0040165d mov eax, dword [ecx + 0x1c]
+0x00401660 ror eax, 8
+0x00401663 sub al, 0
+0x00401665 sub al, 0x45
+0x00401667 pop eax
+0x00401668 jb 0x401670
+0x0040166a nop
+0x0040166b jmp 0x4010e8
+0x00401670 nop
+0x00401671 nop
+0x00401672 nop
+0x00401673 jmp 0x4010e0

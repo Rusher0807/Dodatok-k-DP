@@ -1,0 +1,10 @@
+34: entry0 ()
+0x00401500 sub rsp, 0x28
+0x00401504      488b05b57e..   mov rax, qword [0x004093c0]
+0x0040150b mov dword [rax], 0
+0x00401511 call fcn.00404000
+0x00401516 call fcn.004011b0
+0x0040151b nop
+0x0040151c nop
+0x0040151d add rsp, 0x28
+0x00401521 ret

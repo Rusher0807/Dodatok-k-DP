@@ -1,0 +1,29 @@
+103: entry0 ()
+afv: vars(6:sp[0x8..0x20])
+0x004011d4 push ebp
+0x004011d5 mov ebp, esp
+0x004011d7 sub esp, 0x1c
+0x004011da      c745f40000..   mov dword [var_ch], 0
+0x004011e1      c745fc0000..   mov dword [var_4h], 0
+0x004011e8      c745e80000..   mov dword [var_18h], 0
+0x004011ef      c745ec0000..   mov dword [var_14h], 0
+0x004011f6 push 8
+0x004011f8 lea eax, [lpBuffer]
+0x004011fb push eax
+0x004011fc call dword [sym.imp.KERNEL32.dll_GetSystemDirectoryA]
+0x00401202 mov ecx, dword [var_ch]
+0x00401205 push ecx
+0x00401206 call fcn.00401241
+0x0040120b add esp, 4
+0x0040120e call fcn.004012cb
+0x00401213      c745e40000..   mov dword [var_1ch], 0
+0x0040121a jmp 0x401225
+0x0040121c mov edx, dword [var_1ch]
+0x0040121f add edx, 1
+0x00401222 mov dword [var_1ch], edx
+0x00401225 cmp dword [var_1ch], 0x64
+0x00401229 jae 0x40122d
+0x0040122b jmp 0x40121c
+0x0040122d call dword [sym.imp.ole32.dll_CoUninitialize]
+0x00401233 push 0
+0x00401235 call dword [sym.imp.KERNEL32.dll_ExitProcess]

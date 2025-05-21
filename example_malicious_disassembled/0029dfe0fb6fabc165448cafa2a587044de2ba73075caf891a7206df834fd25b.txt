@@ -1,0 +1,365 @@
+1664: entry0 ()
+afv: vars(34:sp[0x8..0x1c0])
+0x00401400 push ebp
+0x00401401 mov ebp, esp
+0x00401403 sub esp, 0x1bc
+0x00401409 pushal
+0x0040140a mov dword [0x41ea50], ebp
+0x00401410 push 0x104
+0x00401415 lea eax, [lpBuffer]
+0x0040141b push eax
+0x0040141c call dword [sym.imp.KERNEL32.dll_GetWindowsDirectoryA]
+0x00401422      c785b4feff..   mov dword [ARG_0], 0x30
+0x0040142c      c785b8feff..   mov dword [var_148h], 3
+0x00401436      c785bcfeff..   mov dword [var_144h], 0x401250
+0x00401440      c785c0feff..   mov dword [var_140h], 0
+0x0040144a      c785c4feff..   mov dword [var_13ch], 0
+0x00401454      c785c8feff..   mov dword [var_138h], 2
+0x0040145e push 0x7f00
+0x00401463 push 0
+0x00401465 call dword [sym.imp.USER32.dll_LoadIconA]
+0x0040146b mov dword [var_134h], eax
+0x00401471 push 0x7f00
+0x00401476 push 0
+0x00401478 call dword [sym.imp.USER32.dll_LoadCursorA]
+0x0040147e mov dword [var_130h], eax
+0x00401484 push 0
+0x00401486 call dword [sym.imp.GDI32.dll_GetStockObject]
+0x0040148c mov dword [var_12ch], eax
+0x00401492      c785d8feff..   mov dword [var_128h], 0
+0x0040149c      c785dcfeff..   mov dword [var_124h], str.51613667
+0x004014a6 push 0x7f00
+0x004014ab push 0
+0x004014ad call dword [sym.imp.USER32.dll_LoadIconA]
+0x004014b3 mov dword [var_120h], eax
+0x004014b9 lea ecx, [ARG_0]
+0x004014bf push ecx
+0x004014c0 call dword [sym.imp.USER32.dll_RegisterClassExA]
+0x004014c6 push 0
+0x004014c8 push 2
+0x004014ca push 0
+0x004014cc push 0
+0x004014ce push 0x80000000
+0x004014d3 push 0x80000000
+0x004014d8 push 0x80000000
+0x004014dd push 0x80000000
+0x004014e2 push 0xcf0000
+0x004014e7 push str.777777
+0x004014ec push str.51613667
+0x004014f1 push 0
+0x004014f3 call dword [sym.imp.USER32.dll_CreateWindowExA]
+0x004014f9 mov dword [var_18ch], eax
+0x004014ff      c7856cfeff..   mov dword [s1], 0
+0x00401509 mov edx, dword [sym.imp.KERNEL32.dll_CreateFileA]
+0x0040150f mov dword [var_1a8h], edx
+0x00401515      c785ecfeff..   mov dword [var_114h], 0
+0x0040151f      c78578feff..   mov dword [var_188h], 0x64
+0x00401529      c785e4feff..   mov dword [var_11ch], 1
+0x00401533      c7856cfeff..   mov dword [s1], 0
+0x0040153d      c785acfeff..   mov dword [s2], 0
+0x00401547      c7857cfeff..   mov dword [var_184h], 1
+0x00401551      c785e8feff..   mov dword [var_118h], 3
+0x0040155b      c785ecfeff..   mov dword [var_114h], 0
+0x00401565      c78578feff..   mov dword [var_188h], 0x64
+0x0040156f      c785e4feff..   mov dword [var_11ch], 1
+0x00401579      c7856cfeff..   mov dword [s1], 0
+0x00401583      c785acfeff..   mov dword [s2], 0
+0x0040158d      c7857cfeff..   mov dword [var_184h], 1
+0x00401597      c785e8feff..   mov dword [var_118h], 3
+0x004015a1      c785ecfeff..   mov dword [var_114h], 0
+0x004015ab      c78578feff..   mov dword [var_188h], 0x64
+0x004015b5      c785e4feff..   mov dword [var_11ch], 1
+0x004015bf      c7856cfeff..   mov dword [s1], 0
+0x004015c9      c785acfeff..   mov dword [s2], 0
+0x004015d3      c7857cfeff..   mov dword [var_184h], 1
+0x004015dd      c785e8feff..   mov dword [var_118h], 3
+0x004015e7 push 0x104
+0x004015ec lea eax, [lpBuffer]
+0x004015f2 push eax
+0x004015f3 call dword [sym.imp.KERNEL32.dll_GetWindowsDirectoryA]
+0x004015f9 call fcn.00401a80
+0x004015fe push 0x41a080
+0x00401603 push str.advapi32
+0x00401608 call dword [sym.imp.KERNEL32.dll_LoadLibraryA]
+0x0040160e push eax
+0x0040160f call dword [sym.imp.KERNEL32.dll_GetProcAddress]
+0x00401615 mov dword [var_17ch], eax
+0x0040161b lea ecx, [var_158h]
+0x00401621 push ecx
+0x00401622 push 0x20019
+0x00401627 push 0
+0x00401629 push 0x41a09c
+0x0040162e push reloc.COMCTL32.dll_MenuHelp
+0x00401633 call dword [var_17ch]
+0x00401639 test eax, eax
+0x0040163b je 0x40164c
+0x0040163d push 4
+0x0040163f call dword [sym.imp.KERNEL32.dll_LoadLibraryW]
+0x00401645 xor eax, eax
+0x00401647 jmp 0x401a7c
+0x0040164c lea edx, [var_158h]
+0x00401652 push edx
+0x00401653 push 0x20019
+0x00401658 push 0
+0x0040165a push str.Classes
+0x0040165f mov eax, dword [var_158h]
+0x00401665 push eax
+0x00401666 call dword [var_17ch]
+0x0040166c test eax, eax
+0x0040166e je 0x40167f
+0x00401670 push 4
+0x00401672 call dword [sym.imp.KERNEL32.dll_LoadLibraryW]
+0x00401678 xor eax, eax
+0x0040167a jmp 0x401a7c
+0x0040167f lea ecx, [var_158h]
+0x00401685 push ecx
+0x00401686 push 0x20019
+0x0040168b push 0
+0x0040168d push str.CLSID
+0x00401692 mov edx, dword [var_158h]
+0x00401698 push edx
+0x00401699 call dword [var_17ch]
+0x0040169f test eax, eax
+0x004016a1 je 0x4016b2
+0x004016a3 push 4
+0x004016a5 call dword [sym.imp.KERNEL32.dll_LoadLibraryW]
+0x004016ab xor eax, eax
+0x004016ad jmp 0x401a7c
+0x004016b2 lea eax, [var_158h]
+0x004016b8 push eax
+0x004016b9 push 0x20019
+0x004016be push 0
+0x004016c0 push 0x41e93c
+0x004016c5 mov ecx, dword [var_158h]
+0x004016cb push ecx
+0x004016cc call dword [var_17ch]
+0x004016d2 test eax, eax
+0x004016d4 je 0x4016e5
+0x004016d6 push 4
+0x004016d8 call dword [sym.imp.KERNEL32.dll_LoadLibraryW]
+0x004016de xor eax, eax
+0x004016e0 jmp 0x401a7c
+0x004016e5 lea edx, [var_158h]
+0x004016eb push edx
+0x004016ec push 0x20019
+0x004016f1 push 0
+0x004016f3 push 0x41e940
+0x004016f8 mov eax, dword [var_158h]
+0x004016fe push eax
+0x004016ff call dword [var_17ch]
+0x00401705 test eax, eax
+0x00401707 je 0x401718
+0x00401709 push 4
+0x0040170b call dword [sym.imp.KERNEL32.dll_LoadLibraryW]
+0x00401711 xor eax, eax
+0x00401713 jmp 0x401a7c
+0x00401718 lea ecx, [var_158h]
+0x0040171e push ecx
+0x0040171f push 0x20019
+0x00401724 push 0
+0x00401726 push str.00000507_0000_0010_8000_00AA006D2EA4
+0x0040172b mov edx, dword [var_158h]
+0x00401731 push edx
+0x00401732 call dword [var_17ch]
+0x00401738 test eax, eax
+0x0040173a je 0x401743
+0x0040173c xor eax, eax
+0x0040173e jmp 0x401a7c
+0x00401743 lea eax, [var_158h]
+0x00401749 push eax
+0x0040174a push 0x20019
+0x0040174f push 0
+0x00401751 push str.ProgID
+0x00401756 mov ecx, dword [var_158h]
+0x0040175c push ecx
+0x0040175d call dword [var_17ch]
+0x00401763 test eax, eax
+0x00401765 je 0x40176e
+0x00401767 xor eax, eax
+0x00401769 jmp 0x401a7c
+0x0040176e lea edx, [var_158h]
+0x00401774 push edx
+0x00401775 push 0x20019
+0x0040177a push 0
+0x0040177c push str.844849984
+0x00401781 mov eax, dword [var_158h]
+0x00401787 push eax
+0x00401788 call dword [var_17ch]
+0x0040178e test eax, eax
+0x00401790 jne 0x4017a1
+0x00401792 push 4
+0x00401794 call dword [sym.imp.KERNEL32.dll_LoadLibraryW]
+0x0040179a xor eax, eax
+0x0040179c jmp 0x401a7c
+0x004017a1 push 0x104
+0x004017a6 push 0x41e94c
+0x004017ab call dword [sym.imp.KERNEL32.dll_GetWindowsDirectoryA]
+0x004017b1 push str._system32cabinet.dll
+0x004017b6 push 0x41e94c
+0x004017bb call dword [sym.imp.KERNEL32.dll_lstrcatA]
+0x004017c1 call fcn.00401000
+0x004017c6 mov ecx, dword [0x41e944]
+0x004017cc push ecx
+0x004017cd call fcn.00401020
+0x004017d2 add esp, 4
+0x004017d5 mov dword [var_198h], eax
+0x004017db mov edx, dword [var_198h]
+0x004017e1 push edx
+0x004017e2 call fcn.00401110
+0x004017e7 add esp, 4
+0x004017ea mov dword [var_190h], eax
+0x004017f0 mov eax, dword [var_198h]
+0x004017f6 push eax
+0x004017f7 push 0
+0x004017f9 mov ecx, dword [var_190h]
+0x004017ff push ecx
+0x00401800 call fcn.00401140
+0x00401805 add esp, 0xc
+0x00401808 mov edx, dword [var_198h]
+0x0040180e mov dword [var_1a0h], edx
+0x00401814 mov eax, dword [s1]
+0x0040181a cmp eax, dword [var_198h]
+0x00401820 jae 0x4018ac
+0x00401826 mov ecx, dword [var_1a0h]
+0x0040182c push ecx
+0x0040182d mov edx, dword [var_188h]
+0x00401833 push edx
+0x00401834 call fcn.00401150
+0x00401839 add esp, 8
+0x0040183c mov dword [n], eax
+0x00401842 mov eax, dword [n]
+0x00401848 push eax
+0x00401849 mov ecx, dword [0x41e944]
+0x0040184f add ecx, dword [s2]
+0x00401855 push ecx
+0x00401856 mov edx, dword [var_190h]
+0x0040185c add edx, dword [s1]
+0x00401862 push edx
+0x00401863 call sub.msvcrt.dll_memcpy
+0x00401868 add esp, 0xc
+0x0040186b mov eax, dword [var_11ch]
+0x00401871 add eax, dword [var_188h]
+0x00401877 add eax, dword [s2]
+0x0040187d mov dword [s2], eax
+0x00401883 mov ecx, dword [s1]
+0x00401889 add ecx, dword [var_188h]
+0x0040188f mov dword [s1], ecx
+0x00401895 mov edx, dword [var_1a0h]
+0x0040189b sub edx, dword [n]
+0x004018a1 mov dword [var_1a0h], edx
+0x004018a7 jmp 0x401814
+0x004018ac mov eax, dword [var_198h]
+0x004018b2 push eax
+0x004018b3 mov ecx, dword [var_190h]
+0x004018b9 push ecx
+0x004018ba call fcn.00401180
+0x004018bf add esp, 8
+0x004018c2      c785acfeff..   mov dword [s2], 0
+0x004018cc      c78554feff..   mov dword [var_1ach], 0
+0x004018d6 call fcn.00401010
+0x004018db mov edx, dword [0x41e944]
+0x004018e1 push edx
+0x004018e2 call fcn.00401020
+0x004018e7 add esp, 4
+0x004018ea mov dword [var_1b0h], eax
+0x004018f0 mov eax, dword [var_1b0h]
+0x004018f6 push eax
+0x004018f7 call fcn.00401110
+0x004018fc add esp, 4
+0x004018ff mov dword [var_150h], eax
+0x00401905 mov ecx, dword [var_1b0h]
+0x0040190b push ecx
+0x0040190c push 0
+0x0040190e mov edx, dword [var_150h]
+0x00401914 push edx
+0x00401915 call fcn.00401140
+0x0040191a add esp, 0xc
+0x0040191d mov eax, dword [var_1b0h]
+0x00401923 mov dword [var_1b8h], eax
+0x00401929 mov ecx, dword [var_1ach]
+0x0040192f cmp ecx, dword [var_1b0h]
+0x00401935 jae 0x4019c1
+0x0040193b mov edx, dword [var_1b8h]
+0x00401941 push edx
+0x00401942 mov eax, dword [var_188h]
+0x00401948 push eax
+0x00401949 call fcn.00401150
+0x0040194e add esp, 8
+0x00401951 mov dword [var_1bch], eax
+0x00401957 mov ecx, dword [var_1bch]
+0x0040195d push ecx
+0x0040195e mov edx, dword [0x41e944]
+0x00401964 add edx, dword [s2]
+0x0040196a push edx
+0x0040196b mov eax, dword [var_150h]
+0x00401971 add eax, dword [var_1ach]
+0x00401977 push eax
+0x00401978 call sub.msvcrt.dll_memcpy
+0x0040197d add esp, 0xc
+0x00401980 mov ecx, dword [var_11ch]
+0x00401986 add ecx, dword [var_188h]
+0x0040198c add ecx, dword [s2]
+0x00401992 mov dword [s2], ecx
+0x00401998 mov edx, dword [var_1ach]
+0x0040199e add edx, dword [var_188h]
+0x004019a4 mov dword [var_1ach], edx
+0x004019aa mov eax, dword [var_1b8h]
+0x004019b0 sub eax, dword [var_1bch]
+0x004019b6 mov dword [var_1b8h], eax
+0x004019bc jmp 0x401929
+0x004019c1 mov ecx, dword [var_1b0h]
+0x004019c7 push ecx
+0x004019c8 mov edx, dword [var_150h]
+0x004019ce push edx
+0x004019cf call fcn.00401180
+0x004019d4 add esp, 8
+0x004019d7 mov eax, dword [var_190h]
+0x004019dd mov ecx, dword [var_150h]
+0x004019e3 mov dword [eax], ecx
+0x004019e5 push 0x17000
+0x004019ea call fcn.00401110
+0x004019ef add esp, 4
+0x004019f2 mov dword [var_4h], eax
+0x004019f5 lea edx, [var_158h]
+0x004019fb push edx
+0x004019fc push 0x20019
+0x00401a01 push 0
+0x00401a03 push str.SOFTWARE
+0x00401a08 push reloc.COMCTL32.dll_MenuHelp
+0x00401a0d call dword [sym.imp.ADVAPI32.dll_RegOpenKeyExW]
+0x00401a13 test eax, eax
+0x00401a15 je 0x401a1b
+0x00401a17 xor eax, eax
+0x00401a19 jmp 0x401a7c
+0x00401a1b push 0x15100
+0x00401a20 mov eax, dword [var_190h]
+0x00401a26 push eax
+0x00401a27 mov ecx, dword [var_4h]
+0x00401a2a add ecx, 0x200
+0x00401a30 push ecx
+0x00401a31 call sub.msvcrt.dll_memcpy
+0x00401a36 add esp, 0xc
+0x00401a39 mov edx, dword [var_4h]
+0x00401a3c sub edx, 0x400000
+0x00401a42 push edx
+0x00401a43 mov eax, dword [var_4h]
+0x00401a46 push eax
+0x00401a47 mov ecx, dword [var_150h]
+0x00401a4d push ecx
+0x00401a4e call fcn.004010a0
+0x00401a53 add esp, 0xc
+0x00401a56 mov esp, dword [0x41ea50]
+0x00401a5c pop ecx
+0x00401a5d mov ecx, dword [var_4h]
+0x00401a60 add ecx, 0x14f40
+0x00401a66 mov edx, ecx
+0x00401a68 call 0x401a6d
+0x00401a6d pop eax
+0x00401a6e call 0x401a73
+0x00401a73 pop eax
+0x00401a74 call 0x401a79
+0x00401a79 pop eax
+0x00401a7a jmp edx
+0x00401a7c mov esp, ebp
+0x00401a7e pop ebp
+0x00401a7f ret

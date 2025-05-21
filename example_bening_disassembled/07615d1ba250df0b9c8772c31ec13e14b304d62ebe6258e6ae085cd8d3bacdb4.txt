@@ -1,0 +1,106 @@
+694: entry0 ()
+afv: vars(9:sp[0x8..0xb0])
+0x00487a60 sub rsp, 0x28
+0x00487a64 call fcn.0048f940
+0x00487a69 add rsp, 0x28
+0x00487a6d jmp 0x487780
+0x00487a72 int3
+0x00487a73 int3
+0x00487a74 int3
+0x00487a75 int3
+0x00487a76 int3
+0x00487a77 int3
+0x00487a78 int3
+0x00487a79 int3
+0x00487a7a int3
+0x00487a7b int3
+0x00487a7c int3
+0x00487a7d int3
+0x00487a7e int3
+0x00487a7f int3
+0x00487a80 int3
+0x00487a81 int3
+0x00487a82 int3
+0x00487a83 int3
+0x00487a84 int3
+0x00487a85 int3
+0x00487a86 nop
+0x00487a8a nop
+0x00487a8e nop
+361: fcn.00487a90 (VOID *arg1)
+args(rcx) vars(13:sp[0x20..0x90])
+0x00487a90      483b0d2941..   cmp rcx, qword [0x004ebbc0]
+0x00487a97 jne 0x487aaa
+0x00487a99 rol rcx, 0x10
+0x00487a9d test cx, 0xffff
+0x00487aa2 jne 0x487aa6
+0x00487aa4 repz ret
+0x00487aa6 ror rcx, 0x10
+0x00487aaa jmp 0x48fa10
+0x00487aaf int3
+367: fcn.00487ab0 (int64_t arg1, int64_t arg2, int64_t arg3, int64_t arg4, int64_t arg_70h)
+args(rcx, rdx, r8, r9) vars(3:sp[0x30..0x50])
+0x00487ab0 sub rsp, 0x48
+0x00487ab4 test rdx, rdx
+0x00487ab7 mov qword [var_40h], rsi
+0x00487abc mov qword [var_38h], rdi
+0x00487ac1 mov rdi, rdx
+0x00487ac4 mov esi, r9d
+0x00487ac7 mov r10, r8
+0x00487aca mov r11d, ecx
+0x00487acd jne 0x487b06
+0x00487acf call fcn.0048c3c0
+0x00487ad4 xor r9d, r9d
+0x00487ad7 xor r8d, r8d
+0x00487ada xor edx, edx
+0x00487adc xor ecx, ecx
+0x00487ade      48c7442420..   mov qword [var_20h], 0
+0x00487ae7 mov dword [rax], 0x16
+0x00487aed call fcn.0048fc10
+0x00487af2 mov eax, 0x16
+0x00487af7 mov rdi, qword [var_38h]
+0x00487afc mov rsi, qword [var_40h]
+0x00487b01 add rsp, 0x48
+0x00487b05 ret
+0x00487b06 test r8, r8
+0x00487b09 je 0x487acf
+0x00487b0b xor eax, eax
+0x00487b0d mov word [rdx], 0
+0x00487b12 mov edx, dword [arg_70h]
+0x00487b16 test edx, edx
+0x00487b18 setne al
+0x00487b1b add rax, 1
+0x00487b1f cmp r8, rax
+0x00487b22 ja 0x487b5b
+0x00487b24 call fcn.0048c3c0
+0x00487b29 xor r9d, r9d
+0x00487b2c xor r8d, r8d
+0x00487b2f xor edx, edx
+0x00487b31 xor ecx, ecx
+0x00487b33      48c7442420..   mov qword [var_20h], 0
+0x00487b3c mov dword [rax], 0x22
+0x00487b42 call fcn.0048fc10
+0x00487b47 mov eax, 0x22
+0x00487b4c mov rdi, qword [var_38h]
+0x00487b51 mov rsi, qword [var_40h]
+0x00487b56 add rsp, 0x48
+0x00487b5a ret
+0x00487b5b lea eax, [r9 - 2]
+0x00487b5f cmp eax, 0x22
+0x00487b62 ja 0x487acf
+0x00487b68 xor ecx, ecx
+0x00487b6a test edx, edx
+0x00487b6c mov r8, rdi
+0x00487b6f je 0x487b82
+0x00487b71 mov word [rdi], 0x2d
+0x00487b76 lea r8, [rdi + 2]
+0x00487b7a mov ecx, 1
+0x00487b7f neg r11d
+0x00487b82 mov r9, r8
+0x00487b85 nop
+0x00487b89 nop
+0x00487b8c nop
+0x00487b90 xor edx, edx
+0x00487b92 mov eax, r11d
+0x00487b95 div esi
+0x00487b97 cmp edx, 9

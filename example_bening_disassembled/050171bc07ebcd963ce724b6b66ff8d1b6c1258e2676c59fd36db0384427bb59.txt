@@ -1,0 +1,103 @@
+34: entry0 ()
+0x004014d0 sub rsp, 0x28
+0x004014d4      488b05a597..   mov rax, qword [0x0041ac80]
+0x004014db mov dword [rax], 1
+0x004014e1 call fcn.0040ac60
+0x004014e6 call fcn.004011b0
+0x004014eb nop
+0x004014ec nop
+0x004014ed add rsp, 0x28
+0x004014f1 ret
+0x004014f2 nop dword [rax]
+0x004014f6      662e0f1f84..   nop word cs:[rax + rax]
+0x00401500 sub rsp, 0x28
+0x00401504      488b057597..   mov rax, qword [0x0041ac80]
+0x0040150b mov dword [rax], 0
+0x00401511 call fcn.0040ac60
+0x00401516 call fcn.004011b0
+0x0040151b nop
+0x0040151c nop
+0x0040151d add rsp, 0x28
+0x00401521 ret
+0x00401522 nop
+0x00401523 nop
+0x00401524 nop
+0x00401525 nop
+0x00401526 nop
+0x00401527 nop
+0x00401528 nop
+0x00401529 nop
+0x0040152a nop
+0x0040152b nop
+0x0040152c nop
+0x0040152d nop
+0x0040152e nop
+0x0040152f nop
+0x00401530 push rbp
+0x00401531 mov rbp, rsp
+0x00401534 pop rbp
+0x00401535 ret
+0x00401536      662e0f1f84..   nop word cs:[rax + rax]
+0x00401540 push rbp
+0x00401541 mov rbp, rsp
+0x00401544 sub rsp, 0x20
+0x00401548      48833df0cc..   cmp qword [0x0040e240], 0
+0x00401550 je 0x401582
+0x00401552      488d0da7da..   lea rcx, str.libgcj_16.dll
+0x00401559 call qword [sym.imp.KERNEL32.dll_GetModuleHandleA]
+0x0040155f test rax, rax
+0x00401562 je 0x401593
+0x00401564      488d15a3da..   lea rdx, str._Jv_RegisterClasses
+0x0040156b mov rcx, rax
+0x0040156e call qword [sym.imp.KERNEL32.dll_GetProcAddress]
+0x00401574 test rax, rax
+0x00401577 je 0x401582
+0x00401579      488d0dc0cc..   lea rcx, [0x0040e240]
+0x00401580 call rax
+0x00401582      488d0d1700..   lea rcx, [0x004015a0]
+0x00401589 add rsp, 0x20
+0x0040158d pop rbp
+0x0040158e jmp 0x40ab60
+0x00401593      488d0596ff..   lea rax, [0x00401530]
+0x0040159a jmp 0x401579
+0x0040159c nop dword [rax]
+0x004015a0 push rbp
+0x004015a1 mov rbp, rsp
+0x004015a4 pop rbp
+0x004015a5 ret
+0x004015a6 nop
+0x004015a7 nop
+0x004015a8 nop
+0x004015a9 nop
+0x004015aa nop
+0x004015ab nop
+0x004015ac nop
+0x004015ad nop
+0x004015ae nop
+0x004015af nop
+1408: fcn.004015b0 ()
+afv: vars(23:sp[0x80..0x140])
+0x004015b0 push r15
+0x004015b2 push r14
+0x004015b4 push r13
+0x004015b6 push r12
+0x004015b8 push rbp
+0x004015b9 push rdi
+0x004015ba push rsi
+0x004015bb push rbx
+0x004015bc      4881ecf800..   sub rsp, 0xf8
+0x004015c3      0f29b424e0..   movaps xmmword [var_e0h], xmm6
+0x004015cb      488b058e96..   mov rax, qword [0x0041ac60]
+0x004015d2      83b8740300..   cmp dword [rax + 0x374], 1
+0x004015d9 je 0x401a84
+0x004015df      488b057a96..   mov rax, qword [0x0041ac60]
+0x004015e6      83b8780300..   cmp dword [rax + 0x378], 1
+0x004015ed je 0x401a6b
+0x004015f3      488b052696..   mov rax, qword [0x0041ac20]
+0x004015fa      c744247cff..   mov dword [var_7ch], 0xffffffff
+0x00401602      488b3db797..   mov rdi, qword [0x0041adc0]
+0x00401609 mov qword [var_60h], rax
+0x0040160e      488b05bb96..   mov rax, qword [0x0041acd0]
+0x00401615 mov qword [var_70h], rax
+0x0040161a      488b053f96..   mov rax, qword [0x0041ac60]
+0x00401621      83b87c0300..   cmp dword [rax + 0x37c], 1

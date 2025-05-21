@@ -1,0 +1,23 @@
+74: entry0 ()
+0000:04e8     33ed           xor bp, bp
+0000:04ea     55             push bp
+0000:04eb     9affff0000     lcall fcn.0000ffff
+0000:04f0     0bc0           or ax, ax
+0000:04f2     74ee           je 0x4e2
+0000:04f4     8c069201       mov word [fcn.0000ffff], es
+0000:04f8     81c10001       add cx, 0x100
+0000:04fc     72e4           jb 0x4e2
+0000:04fe     890e5c01       mov word [fcn.0000ffff], cx
+0000:0502     89365e01       mov word [fcn.0000ffff], si
+0000:0506     893e6001       mov word [fcn.0000ffff], di
+0000:050a     891e6201       mov word [fcn.0000ffff], bx
+0000:050e     8c066401       mov word [fcn.0000ffff], es
+0000:0512     89166601       mov word [fcn.0000ffff], dx
+0000:0516     b8ffff         mov ax, fcn.0000ffff
+0000:0519     50             push ax
+0000:051a     9affff0000     lcall fcn.0000ffff
+0000:051f     9affff0000     lcall fcn.0000ffff
+0000:0524     86c4           xchg ah, al
+0000:0526     a39401         mov word [fcn.0000ffff], ax
+0000:0529     b430           mov ah, 0x30
+0000:052b     2ef7061000..   test word cs:[0x10], 1

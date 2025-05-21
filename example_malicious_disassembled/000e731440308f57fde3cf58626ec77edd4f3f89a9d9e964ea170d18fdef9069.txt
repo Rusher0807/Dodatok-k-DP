@@ -1,0 +1,28 @@
+144: entry0 ()
+0x004018a0 pushal
+0x004018a1 xor edx, edx
+0x004018a3 push edx
+0x004018a4 push edx
+0x004018a5 call dword [sym.imp.KERNEL32.dll_lstrcatW]
+0x004018ab mov eax, sym.imp.CRYPTNET.dll_CryptUninstallCancelRetrieval
+0x004018b0 dec eax
+0x004018b1 call dword [eax + 1]
+0x004018b4 sub esp, 8
+0x004018b7 xor edx, edx
+0x004018b9 mov edx, 0x46b200
+0x004018be dec dh
+0x004018c0 push edx
+0x004018c1 lea ecx, [edx + 0xe]
+0x004018c4 add byte [ecx], 4
+0x004018c7 push edx
+0x004018c8 call dword [sym.imp.KERNEL32.dll_LoadLibraryW]
+0x004018ce mov ecx, eax
+0x004018d0 mov cl, 0x3c
+0x004018d2 mov ecx, dword [ecx]
+0x004018d4 mov ecx, dword [eax + ecx + 0x1c]
+0x004018d8 shr ecx, 8
+0x004018db mov eax, ecx
+0x004018dd cmp al, 0x10
+0x004018df pop eax
+0x004018e0 ja 0x401090
+@-> 0x004018e6      ebfe           jmp 0x4018e6
