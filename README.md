@@ -1,6 +1,4 @@
-# Dodatok k práci Detekcia malvéru pomocou LLM
-
-1. **Inštalačná príručka**
+#  **Inštalačná príručka**
 
 Táto príručka popisuje inštaláciu potrebného softvéru a knižníc pre praktickú časť diplomovej práce: Detekcia správania malware s využitím LLM modelov.
 
@@ -32,7 +30,7 @@ Táto príručka popisuje inštaláciu potrebného softvéru a knižníc pre pra
 
 \-------------------------------------------------------------------------------------------------------------------------
 
-1. **Používateľská príručka**
+# **Používateľská príručka**
 
 Táto požívateľská príručka popisuje skripty a ich využitie v rámci praktickej časti diplomovej práce. Tieto skripty môžeme nájsť ako prílohu k práci, alebo tu na githube.
 
