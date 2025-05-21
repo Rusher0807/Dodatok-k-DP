@@ -28,7 +28,7 @@ Táto príručka popisuje inštaláciu potrebného softvéru a knižníc pre pra
 - Mistral: <https://huggingface.co/mistralai/Mistral-7B-v0.3>
 - CodeLlama: <https://huggingface.co/meta-llama/CodeLlama-7b-hf>
 
-\-------------------------------------------------------------------------------------------------------------------------
+
 
 # **Používateľská príručka**
 
