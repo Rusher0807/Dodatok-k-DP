@@ -67,6 +67,7 @@ Stiahnuť vzorky môžete aj manuálne z rovnakej stránky.
 - Využitím skriptu _gptAssesUntrainedModel.py_. Je potrebné nastaviť api kľúč pre gpt alebo gemini. Defaultne sa používa gpt, pre použitie gemini sa môže zakomentovať riadky 114 až 118 a odkomentovať riadky 120 až 125.
 - Je potrebné nastaviť cestu pre vstupnú zložku s vytvorenými assemblerskými dátami _disasm_dir_ na riadku 11 a následne pre zložku s metadátami na riadku 12 _metadata_dir_.
 - Výstupné vytvorené súbory sa budú nachádzať v zložke s cestou _output_dir, ktorý môžeme zmeniť na riadku 13._
+- Príklady výstupov môžeme nájsť v _annotated_output_
 
 **Spustenie a testovanie llamy3B od Ollamy**
 
