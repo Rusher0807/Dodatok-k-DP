@@ -32,7 +32,7 @@ Táto príručka popisuje inštaláciu potrebného softvéru a knižníc pre pra
 
 # **Používateľská príručka**
 
-Táto požívateľská príručka popisuje skripty a ich využitie v rámci praktickej časti diplomovej práce. Tieto skripty môžeme nájsť ako prílohu k práci, alebo tu na githube.
+Táto požívateľská príručka popisuje skripty a ich využitie v praktickej časti diplomovej práce. Tieto skripty môžeme nájsť ako prílohu k práci, alebo tu na githube v zložke prílohy.
 
 **Stiahnutie vzoriek malvéru (odporúča sa vo virtuálnom prostredí)**
 
@@ -60,7 +60,8 @@ Stiahnuť vzorky môžete aj manuálne z rovnakej stránky.
 
 **Čistenie assemblerských dát**
 
-- Po vytvorení assemblerských dát použite skript _disasCleaner.py_ na odstránenie nepotrebných znakov. Premenú _INPUT_DIR_ zmeňte podľa Vašej vstupnej zložky, ktorá obsahuje súbory s assemblerským kódom a premennú _OUTPUT_DIR_ podľa výstupnej zložky, do ktorej sa uložia súbory bez náhodných znakov
+- Po vytvorení assemblerských dát použite skript _disasCleaner.py_ na odstránenie nepotrebných znakov. Premenú _INPUT_DIR_ zmeňte podľa Vašej vstupnej zložky, ktorá obsahuje súbory s assemblerským kódom a premennú _OUTPUT_DIR_ podľa výstupnej zložky, do ktorej sa uložia súbory bez náhodných znakov.
+- Pár príkladov som uviedol do zložky _example_bening_disassembled_ a _example_malicious_disassembled_
 
 **Vytváranie dát na RAG a dotrénovanie**
 
